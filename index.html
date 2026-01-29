@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Сайт Проект</title>
-    <link rel="stylesheet" href="/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сайт-визитка Радомира</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
 </head>
 <body>
-<video class="video-bg" autoplay muted loop>
-    <source src="/video/bg.mov" type="video/mp4">
+<video autoplay muted loop id="bg-video">
+    <source src="video/bg.mov" type="video/mp4">
 </video>
-<main class="glass">
+<main>
     <h2>Интерактивные элементы</h2>
-    <p>Нажми на кнопки</p>
+    <p>Нажми на кнопку </p>
     <button onclick="createCube()">Создать новый куб</button>
-    <br>
-    <a href="/gallery.html" class="nav-link">Перейти в галерею</a>
+    <br><br>
+    <a href="gallery.html">Перейти в галерею</a>
     <div id="cube-container"></div>
 </main>
-<footer class="glass">
+<footer>
     Данный сайт сделан специально для проектной работы Шамсиева Радомира 10а.<br>
     Руководитель: Шакирова Ольга Александровна, село Красная Горка, 2026
 </footer>
-<script src="/js/main.js"></script>
 </body>
 </html>
