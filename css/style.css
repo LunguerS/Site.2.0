@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    color: #e6d9ff;
+    background: #0b0618;
+}
+.video-bg {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.35) saturate(1.2);
+}
+.glass {
+    background: rgba(60, 10, 120, 0.45);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    margin: 20px;
+    padding: 25px;
+    box-shadow: 0 0 30px rgba(140, 80, 255, 0.25);
+}
+main {
+    flex: 1;
+    text-align: center;
+    margin-top: 60px;
+}
+h2 {
+    color: #d8b4ff;
+}
+button {
+    background: rgba(140, 80, 255, 0.25);
+    border: 1px solid #b983ff;
+    color: #e9d5ff;
+    padding: 12px 22px;
+    margin: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #9d4edd;
+    color: #fff;
+}
+.nav-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #e9d5ff;
+    border: 1px solid #b983ff;
+    background: rgba(140, 80, 255, 0.25);
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: #9d4edd;
+    color: #fff;
+}
+footer {
+    font-size: 14px;
+    text-align: center;
+    color: #cdb4ff;
+}
+#cube-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* можно увеличить */
+    margin: 30px auto;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.cube {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 12px;
+    cursor: grab;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
